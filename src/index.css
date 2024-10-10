@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.custom_grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.swiper {
+  width: 100%;
+  height: auto;
+}
+
+
+.swiper-button-prev, .swiper-button-prev::after, .swiper-button-next, .swiper-button-next::after {
+  all: unset;
+  position: absolute;  
+  bottom: 0;
+  display: none;
+}
